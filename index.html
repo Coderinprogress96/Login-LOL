@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to League Of Legends!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="logo">
+     <img src="imagenes/Logolol.png" width="500px">
+</div>
+
+<div class="contenedor">
+  <div class="recuadro">
+    <form>
+      <div class="form-group">
+        <label for="Inputuser">Username</label>
+        <input type="text" class="form-control" id="Inputuser" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <label for="pass">Password</label>
+        <input type="password" class="form-control" id="pass" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="show">Show Password</label>
+        <input class="" type="checkbox" name="show" id="show">
+    </div>
+      <div class="form-group">
+        <label for="Server">Server</label>
+        <select class="form-control" id="Server">Server:
+          <option value="None">None</option>
+          <option value="las">Latin America South</option>
+          <option value="las">Latin America North</option>
+          <option value="las">North America</option>
+          <option value="las">EUR</option>
+          <option value="las">Asia</option>
+        </select>
+      </div>
+      <div class="link">
+          <a href="newacc.html">Don't have an account? Register here!</a>
+      </div>
+      <div class="link">
+        
+        <a href="forguspass.html">Forget your username or password? Click here.</a>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+  var passwordInput = document.getElementById('pass');
+  var showPassword = document.getElementById('show');
+  
+  showPassword.addEventListener('change', function (event) {
+      if (event.target.checked) {
+          passwordInput.type = 'text';
+      } else {
+          passwordInput.type = 'password';
+      }
+  });
+</script>
+</body>
+</html>

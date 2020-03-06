@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Are you new? Join us!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylenew.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="imagenes/Logolol.png" width="500px">
+        </div>
+        <h1>Welcome Summoner!</h1>
+        <p>
+            Are you ready to join us in the summoner's rift? Join us in this battle and enjoy the experience of League Of Legends!
+        </p>
+        <div class="bordeformulario">
+            <div class="row">
+                <div class="col-lg-6 divide">
+                    <h3>Register!</h3>
+                    <form class="left" action="">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input class="form-control" type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Lastname:</label>
+                            <input class="form-control" type="text" name="lastname" id="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="user">User:</label>
+                            <input class="form-control" type="text" name="user" id="user">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password:</label>
+                            <input class="form-control" type="password" name="pass" id="pass">
+                        </div>
+                        
+                        <div class="form-group">
+                                <label for="confpass">Confirm Password:</label>
+                                <input class="form-control" type="password" name="confpass" id="confpass">
+                            </div>
+                        <div class="form-group">
+                            <label for="show">Show Password</label>
+                            <input class="" type="checkbox" name="show" id="show">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input class="form-control" type="email" name="mail" id="mail">
+                        </div>
+                        <button type="submit" class="btn btn-default">Register!</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 ">
+                    <h3>Have an account? Login!</h3>
+                        <form class="left" action="">
+                                <div class="form-group">
+                                    <label for="userlog">Username:</label>
+                                    <input class="form-control" type="text" name="userlog" id="userlog">
+                                </div>
+                                <div class="form-group">
+                                    <label for="passlog">Password:</label>
+                                    <input class="form-control" type="password" name="passlog" id="passlog">
+                                </div>
+                                <div class="form-group">
+                                    <label for="show">Show Password</label>
+                                    <input class="" type="checkbox" name="show" id="showlog">
+                                </div>
+                                <div class="link">
+                                    <a href="forguspass.html">Forget your username or password? Click here.</a>
+                                </div>
+                                <button type="submit" class="btn btn-default">Register!</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+        var passwordInput = document.getElementById('pass');
+        var showPassword = document.getElementById('show');
+        showPassword.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                passwordInput.type = 'text';
+                
+            } else {
+                passwordInput.type = 'password';
+            }
+        });
+    </script>
+<script>
+        var passwordconf = document.getElementById('confpass');
+        var showPassword = document.getElementById('show');
+        showPassword.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                passwordconf.type = 'text';
+
+            } else {
+                passwordconf.type = 'password';
+            }
+        });
+    </script>
+<script>
+        var passwordlog = document.getElementById('passlog');
+        var showPassword = document.getElementById('showlog');
+        showPassword.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                passwordlog.type = 'text';
+            } else {
+                passwordlog.type = 'password';
+            }
+        });
+    </script>
+</body>
+</html>

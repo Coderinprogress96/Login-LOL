@@ -1,0 +1,70 @@
+* {
+padding: 0px;
+margin: 0px;
+}
+body {
+    background: url(imagenes/Lol.jpg) no-repeat fixed;
+    background-size:cover ;
+    margin: 0 auto;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    min-height: 100vh;
+    background:linear-gradient( 45deg, rgba(0,79,61,0.6951155462184874) 35%, rgba(4,0,66,1) 100%);
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.contenedordetodo {
+    text-align: center;
+    margin: 0 auto;
+}
+.logo {
+    text-align: center;
+    margin: 2rem auto;
+   
+
+}
+.contenedor {
+    width: 50em;
+    height: 20em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5em;
+    border: midnightblue groove 0.2em;
+    margin-top: 70px;
+}
+.form-inline .btn-default {
+    margin: 1rem;
+}
+.form-group {
+    color:#fff;
+}
+.form-group input {
+    color:#000;
+}
+.mdb-main-label {
+    color: white;
+}
+.contenedordetodo p {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 1em;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+}
+.form-group a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+.form-group a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Staatliches', cursive;
+}
